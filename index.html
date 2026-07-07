@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Pitch Club | Padel & Indoor Soccer in Ingolstadt</title>
+    <meta name="description" content="Urban Pitch Club – Ingolstadts erste Adresse für Padel und Indoor Soccer. Moderne Courts, starke Community, unvergessliche Matches.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-line"></div>
+            <span class="loader-text">URBAN PITCH CLUB</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <span class="logo-mark">UPC</span>
+                <span class="logo-text">Urban Pitch Club</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#sports" class="nav-link">Sports</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+                <a href="#booking" class="nav-btn">Court buchen</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#sports" class="mobile-link">Sports</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#pricing" class="mobile-link">Pricing</a>
+            <a href="#events" class="mobile-link">Events</a>
+            <a href="#contact" class="mobile-link">Kontakt</a>
+            <a href="#booking" class="mobile-btn">Court buchen</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-animate>
+                <span class="badge-dot"></span>
+                Jetzt in Ingolstadt
+            </div>
+            <h1 class="hero-title" data-animate>
+                <span class="hero-line">Where Sport</span>
+                <span class="hero-line">Meets <em>Culture</em></span>
+            </h1>
+            <p class="hero-sub" data-animate>
+                Padel & Indoor Soccer — ein Ort, zwei Leidenschaften.
+                Moderne Courts, starke Community, unvergessliche Matches.
+            </p>
+            <div class="hero-actions" data-animate>
+                <a href="#booking" class="btn btn-primary">
+                    Court buchen
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#sports" class="btn btn-outline">Mehr erfahren</a>
+            </div>
+            <div class="hero-stats" data-animate>
+                <div class="stat">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Padel Courts</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Soccer Fields</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Community</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>PADEL</span>
+            <span class="marquee-dot"></span>
+            <span>INDOOR SOCCER</span>
+            <span class="marquee-dot"></span>
+            <span>COMMUNITY</span>
+            <span class="marquee-dot"></span>
+            <span>TOURNAMENTS</span>
+            <span class="marquee-dot"></span>
+            <span>COACHING</span>
+            <span class="marquee-dot"></span>
+            <span>EVENTS</span>
+            <span class="marquee-dot"></span>
+            <span>PADEL</span>
+            <span class="marquee-dot"></span>
+            <span>INDOOR SOCCER</span>
+            <span class="marquee-dot"></span>
+            <span>COMMUNITY</span>
+            <span class="marquee-dot"></span>
+            <span>TOURNAMENTS</span>
+            <span class="marquee-dot"></span>
+            <span>COACHING</span>
+            <span class="marquee-dot"></span>
+            <span>EVENTS</span>
+            <span class="marquee-dot"></span>
+        </div>
+    </div>
+
+    <!-- Sports Section -->
+    <section class="section sports" id="sports">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">01 — Unsere Sports</span>
+                <h2 class="section-title">Zwei Sports.<br>Ein <em>Zuhause.</em></h2>
+            </div>
+
+            <div class="sports-grid">
+                <!-- Padel Card -->
+                <div class="sport-card" data-animate>
+                    <div class="sport-card-visual">
+                        <div class="sport-icon">
+                            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="25" y="8" width="30" height="50" rx="15" stroke="currentColor" stroke-width="2"/>
+                                <line x1="25" y1="28" x2="55" y2="28" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="40" y1="8" x2="40" y2="28" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="40" cy="18" r="3" fill="currentColor" opacity="0.3"/>
+                                <circle cx="32" cy="18" r="2" fill="currentColor" opacity="0.2"/>
+                                <circle cx="48" cy="18" r="2" fill="currentColor" opacity="0.2"/>
+                                <line x1="40" y1="58" x2="40" y2="72" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="sport-number">01</div>
+                    </div>
+                    <div class="sport-card-content">
+                        <h3 class="sport-name">Padel</h3>
+                        <p class="sport-desc">Der am schnellsten wachsende Sport Europas — jetzt mitten in Ingolstadt. Ob Anfänger oder Fortgeschrittener: Unsere modernen Courts bieten perfekte Bedingungen für jeden Level.</p>
+                        <ul class="sport-features">
+                            <li>6 Indoor-Courts mit Panoramaverglasung</li>
+                            <li>Professionelle LED-Beleuchtung</li>
+                            <li>Leihschläger & Bälle verfügbar</li>
+                            <li>Coaching für alle Level</li>
+                        </ul>
+                        <a href="#booking" class="sport-cta">
+                            Padel Court buchen
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Soccer Card -->
+                <div class="sport-card" data-animate>
+                    <div class="sport-card-visual">
+                        <div class="sport-icon">
+                            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="28" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="40" cy="40" r="8" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="40" y1="12" x2="40" y2="32" stroke="currentColor" stroke-width="1"/>
+                                <line x1="40" y1="48" x2="40" y2="68" stroke="currentColor" stroke-width="1"/>
+                                <line x1="12" y1="40" x2="32" y2="40" stroke="currentColor" stroke-width="1"/>
+                                <line x1="48" y1="40" x2="68" y2="40" stroke="currentColor" stroke-width="1"/>
+                                <path d="M20 22L32 32" stroke="currentColor" stroke-width="1"/>
+                                <path d="M48 48L60 58" stroke="currentColor" stroke-width="1"/>
+                                <path d="M60 22L48 32" stroke="currentColor" stroke-width="1"/>
+                                <path d="M32 48L20 58" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <div class="sport-number">02</div>
+                    </div>
+                    <div class="sport-card-content">
+                        <h3 class="sport-name">Indoor Soccer</h3>
+                        <p class="sport-desc">Schnelle Matches, enge Räume, pure Intensität. Unsere Indoor Soccer Fields bringen den Straßenfußball-Vibe in eine moderne Arena — bei jedem Wetter, zu jeder Zeit.</p>
+                        <ul class="sport-features">
+                            <li>3 Fields mit FIFA-zertifiziertem Kunstrasen</li>
+                            <li>5v5 und 3v3 Spielformate</li>
+                            <li>Integriertes Scoreboard-System</li>
+                            <li>Liga- und Turnierbetrieb</li>
+                        </ul>
+                        <a href="#booking" class="sport-cta">
+                            Soccer Field buchen
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Experience Section -->
+    <section class="section experience" id="about">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">02 — Das Erlebnis</span>
+                <h2 class="section-title">Mehr als nur<br><em>ein Spielfeld.</em></h2>
+            </div>
+
+            <div class="experience-grid" data-animate>
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 12h24" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="8" r="1" fill="currentColor"/><circle cx="14" cy="8" r="1" fill="currentColor"/><circle cx="18" cy="8" r="1" fill="currentColor"/></svg>
+                    </div>
+                    <h3>Online Booking</h3>
+                    <p>Buche deinen Court in Sekunden — direkt über unsere Plattform. Einfach, schnell, flexibel.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><path d="M16 4v6M16 22v6M4 16h6M22 16h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="16" r="5" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3>Pro Equipment</h3>
+                    <p>Leihschläger, Bälle, Schuhe — alles vor Ort. Du brauchst nur gute Laune mitzubringen.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><path d="M8 28V18M16 28V10M24 28V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Coaching</h3>
+                    <p>Von Beginner bis Pro — unsere zertifizierten Coaches bringen dich aufs nächste Level.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><circle cx="10" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="22" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M2 26c0-4 4-7 8-7 1.5 0 3 .4 4.2 1M20 19c4 0 8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16 22l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Finde Mitspieler über unsere Community, nimm an Ligen teil und werde Teil der Bewegung.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><path d="M6 8h20v16a2 2 0 01-2 2H8a2 2 0 01-2-2V8z" stroke="currentColor" stroke-width="1.5"/><path d="M6 8l4-4h12l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14v4a4 4 0 008 0v-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Sports Bar</h3>
+                    <p>Nach dem Match ist vor dem Drink. Unsere Bar bietet Kaltgetränke, Shakes und den perfekten Spot zum Socializen.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M10 8V6a6 6 0 0112 0v2" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="17" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M16 20v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Umkleiden & Duschen</h3>
+                    <p>Premium Umkleidekabinen und Duschen — damit du frisch und ready nach Hause oder ins Office gehst.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Break -->
+    <section class="visual-break">
+        <div class="visual-break-inner">
+            <div class="vb-text" data-animate>
+                <span class="vb-large">GAME ON</span>
+                <span class="vb-sub">Ingolstadt's neue Homebase für Sport & Community</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">03 — Pricing</span>
+                <h2 class="section-title">Transparent.<br><em>Fair.</em> Simple.</h2>
+                <p class="section-desc">Flexible Optionen für jeden Spielertyp — vom Gelegenheitsspieler bis zum Club-Member.</p>
+            </div>
+
+            <!-- Court Pricing -->
+            <div class="pricing-courts" data-animate>
+                <h3 class="pricing-subtitle">Court-Preise pro Stunde</h3>
+                <div class="pricing-table">
+                    <div class="pricing-row pricing-row-header">
+                        <div class="pricing-cell"></div>
+                        <div class="pricing-cell">Off-Peak<span>Mo–Fr bis 17 Uhr</span></div>
+                        <div class="pricing-cell">Peak<span>Mo–Fr ab 17 Uhr & Wochenende</span></div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="pricing-cell pricing-label">Padel Court</div>
+                        <div class="pricing-cell"><span class="price">32€</span></div>
+                        <div class="pricing-cell"><span class="price">44€</span></div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="pricing-cell pricing-label">Soccer Field 5v5</div>
+                        <div class="pricing-cell"><span class="price">60€</span></div>
+                        <div class="pricing-cell"><span class="price">80€</span></div>
+                    </div>
+                    <div class="pricing-row">
+                        <div class="pricing-cell pricing-label">Soccer Field 3v3</div>
+                        <div class="pricing-cell"><span class="price">40€</span></div>
+                        <div class="pricing-cell"><span class="price">55€</span></div>
+                    </div>
+                </div>
+                <p class="pricing-note">Preise pro Court/Field. Schläger-Verleih: 5€. Ball inklusive.</p>
+            </div>
+
+            <!-- Membership Tiers -->
+            <div class="membership-grid" data-animate>
+                <div class="membership-card">
+                    <div class="membership-tier">Flex</div>
+                    <div class="membership-price">
+                        <span class="membership-amount">0€</span>
+                        <span class="membership-period">/Monat</span>
+                    </div>
+                    <p class="membership-desc">Für alle, die flexibel bleiben wollen.</p>
+                    <ul class="membership-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Pay-per-Play Zugang
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Online-Buchung
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Community-Zugang
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Standard-Preise
+                        </li>
+                    </ul>
+                    <a href="#booking" class="btn btn-outline btn-full">Jetzt spielen</a>
+                </div>
+
+                <div class="membership-card membership-featured">
+                    <div class="membership-badge">Beliebt</div>
+                    <div class="membership-tier">Member</div>
+                    <div class="membership-price">
+                        <span class="membership-amount">49€</span>
+                        <span class="membership-period">/Monat</span>
+                    </div>
+                    <p class="membership-desc">Für reguläre Spieler mit Vorteilen.</p>
+                    <ul class="membership-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            20% Rabatt auf alle Courts
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            7 Tage Priority-Buchung
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Kostenlose Schläger-Leihe
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Member-Events & Turniere
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            10% auf Bar & Shop
+                        </li>
+                    </ul>
+                    <a href="#booking" class="btn btn-primary btn-full">Member werden</a>
+                </div>
+
+                <div class="membership-card">
+                    <div class="membership-tier">Pro</div>
+                    <div class="membership-price">
+                        <span class="membership-amount">99€</span>
+                        <span class="membership-period">/Monat</span>
+                    </div>
+                    <p class="membership-desc">Das volle Programm für Enthusiasten.</p>
+                    <ul class="membership-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            40% Rabatt auf alle Courts
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            14 Tage Priority-Buchung
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Unlimitierte Schläger-Leihe
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Exklusive Pro-Events
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            1x Gratis Coaching/Monat
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            20% auf Bar & Shop
+                        </li>
+                    </ul>
+                    <a href="#booking" class="btn btn-outline btn-full">Pro werden</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section events" id="events">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">04 — Events</span>
+                <h2 class="section-title">Turniere, Ligen<br>& <em>Corporate Events.</em></h2>
+            </div>
+
+            <div class="events-grid" data-animate>
+                <div class="event-card event-card-large">
+                    <div class="event-label">Regelmäßig</div>
+                    <h3>Ligen & Turniere</h3>
+                    <p>Wöchentliche Padel- und Soccer-Ligen für verschiedene Skill-Level. Messe dich mit der Community, sammle Punkte und steige auf.</p>
+                    <div class="event-details">
+                        <span>Padel Liga — Jeden Dienstag</span>
+                        <span>Soccer Liga — Jeden Donnerstag</span>
+                        <span>Weekend Cup — Monatlich</span>
+                    </div>
+                    <a href="#booking" class="sport-cta">
+                        Zur Liga anmelden
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <div class="event-card">
+                    <div class="event-label">Business</div>
+                    <h3>Corporate Events</h3>
+                    <p>Teambuilding, Firmenfeiern oder Kunden-Events — wir liefern das Package inkl. Courts, Catering und Organisation.</p>
+                    <a href="#contact" class="sport-cta">
+                        Anfrage stellen
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <div class="event-card">
+                    <div class="event-label">Feiern</div>
+                    <h3>Birthday Packages</h3>
+                    <p>Der perfekte Geburtstag: Sport, Spaß und Snacks. Für Kids und Erwachsene — wir kümmern uns um alles.</p>
+                    <a href="#contact" class="sport-cta">
+                        Package anfragen
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Padel Section -->
+    <section class="section padel-info">
+        <div class="container">
+            <div class="padel-info-grid" data-animate>
+                <div class="padel-info-content">
+                    <span class="section-tag">05 — Für Neulinge</span>
+                    <h2 class="section-title">Was ist<br><em>Padel?</em></h2>
+                    <p>Padel ist die am schnellsten wachsende Sportart der Welt — eine Mischung aus Tennis und Squash. Gespielt wird immer im Doppel auf einem verglasten Court. Der Einstieg ist kinderleicht, aber das Spiel hat unendlich Tiefe.</p>
+                    <div class="padel-facts">
+                        <div class="padel-fact">
+                            <span class="fact-number">30M+</span>
+                            <span class="fact-label">Spieler weltweit</span>
+                        </div>
+                        <div class="padel-fact">
+                            <span class="fact-number">4</span>
+                            <span class="fact-label">Spieler pro Court</span>
+                        </div>
+                        <div class="padel-fact">
+                            <span class="fact-number">20×10m</span>
+                            <span class="fact-label">Courtgröße</span>
+                        </div>
+                    </div>
+                    <a href="#booking" class="btn btn-primary">Erstes Match buchen</a>
+                </div>
+                <div class="padel-info-visual">
+                    <div class="padel-court-diagram">
+                        <div class="court-outline">
+                            <div class="court-net"></div>
+                            <div class="court-service court-service-left"></div>
+                            <div class="court-service court-service-right"></div>
+                            <div class="court-glass court-glass-top"></div>
+                            <div class="court-glass court-glass-bottom"></div>
+                            <div class="court-glass court-glass-left"></div>
+                            <div class="court-glass court-glass-right"></div>
+                            <div class="court-label">PADEL COURT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA Section -->
+    <section class="section booking-cta" id="booking">
+        <div class="container">
+            <div class="booking-cta-inner" data-animate>
+                <h2 class="booking-title">Ready to play?</h2>
+                <p class="booking-desc">Buche jetzt deinen Court und erlebe Sport auf einem neuen Level.</p>
+                <div class="booking-actions">
+                    <a href="#" class="btn btn-primary btn-large">
+                        Padel buchen
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#" class="btn btn-primary btn-large">
+                        Soccer buchen
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+                <p class="booking-note">Oder kontaktiere uns für Gruppen & Events: <a href="mailto:hello@urbanpitchclub.de">hello@urbanpitchclub.de</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">06 — Kontakt</span>
+                <h2 class="section-title">Find <em>us.</em></h2>
+            </div>
+
+            <div class="contact-grid" data-animate>
+                <div class="contact-info">
+                    <div class="contact-block">
+                        <h3>Adresse</h3>
+                        <p>Urban Pitch Club<br>Donaustraße 1<br>85049 Ingolstadt</p>
+                    </div>
+                    <div class="contact-block">
+                        <h3>Öffnungszeiten</h3>
+                        <p>Mo — Fr: 07:00 — 23:00<br>Sa — So: 08:00 — 22:00<br>Feiertage: 09:00 — 20:00</p>
+                    </div>
+                    <div class="contact-block">
+                        <h3>Kontakt</h3>
+                        <p>
+                            <a href="mailto:hello@urbanpitchclub.de">hello@urbanpitchclub.de</a><br>
+                            <a href="tel:+49841123456">+49 841 123 456</a>
+                        </p>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 104 4V4c1 3 4 4 6 4"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21l1.5-5A9 9 0 1118 17l-5 1.5L3 21z"/><path d="M9 10a1.5 1.5 0 001 2.5c1 1 2.5 1.5 2.5 1.5a1.5 1.5 0 002-1"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <div class="map-pin">
+                            <svg width="24" height="32" viewBox="0 0 24 32" fill="none"><path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 20 12 20s12-11 12-20C24 5.4 18.6 0 12 0z" fill="currentColor"/><circle cx="12" cy="12" r="5" fill="#000"/></svg>
+                        </div>
+                        <span>Donaustraße 1, 85049 Ingolstadt</span>
+                        <a href="https://maps.google.com" target="_blank" rel="noopener" class="map-link">In Google Maps öffnen →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-inner" data-animate>
+                <div class="newsletter-content">
+                    <h3>Stay in the game.</h3>
+                    <p>News, Events und Member-Deals direkt in dein Postfach.</p>
+                </div>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); this.classList.add('submitted');">
+                    <input type="email" placeholder="Deine E-Mail" required>
+                    <button type="submit" class="btn btn-primary">Anmelden</button>
+                    <span class="form-success">Willkommen im Club!</span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-mark">UPC</span>
+                        <span class="logo-text">Urban Pitch Club</span>
+                    </a>
+                    <p>Ingolstadts erste Adresse für Padel und Indoor Soccer.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sports</h4>
+                    <a href="#sports">Padel</a>
+                    <a href="#sports">Indoor Soccer</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#booking">Court buchen</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Club</h4>
+                    <a href="#about">Über uns</a>
+                    <a href="#events">Events</a>
+                    <a href="#pricing">Membership</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                    <a href="#">AGB</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Urban Pitch Club. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
